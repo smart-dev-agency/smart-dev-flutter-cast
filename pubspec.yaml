@@ -1,0 +1,29 @@
+name: smart_dev_flutter_cast
+description: "A Flutter plugin that will let you discover cast devices like Chrome Cast and Apple TV and connect to them."
+homepage: "https://github.com/smart-dev-agency/smart-dev-flutter-cast"
+repository: "https://github.com/smart-dev-agency/smart-dev-flutter-cast"
+version: 1.0.0
+
+environment:
+  sdk: ^3.7.2
+  flutter: ">=3.3.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.8
+  stream_transform: ^2.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.smartdev.smart_dev_flutter_cast
+        pluginClass: SmartDevFlutterCastPlugin
+      ios:
+        pluginClass: SmartDevFlutterCastPlugin
